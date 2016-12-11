@@ -1,0 +1,392 @@
+
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 100%; /* 12px */
+  line-height: 123%;
+  vertical-align: baseline;
+  background: #ececea;
+  margin: 0 auto;
+  padding: 0;
+}
+/* Set black background color, white text and some padding */
+    .footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway";
+    font-weight: 300;
+
+    color: #fbeed5;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.centered {
+    text-align: center;
+}
+
+ul li {
+  list-style: none outside none;
+}
+
+/* Links */
+a {
+    
+    word-wrap: break-word;
+    color: #000;
+    text-decoration: none;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+   
+    background-color: fff;
+    text-decoration: none;
+    outline: 0;
+
+}
+
+a:before,
+a:after {
+    transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  width: 33.333333%;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+	background-color: #34495e;
+	padding-top: 20px;
+}
+
+#headerwrap h1 {
+	margin-top: 30px;
+	color: white;
+	font-size: 70px;
+
+}
+
+#headerwrap h3 {
+	color: white;
+	font-size: 30px;
+}
+
+#headerwrap h4 {
+	color: white;
+	font-weight: 700;
+	text-align: center;
+}
+
+#headerwrap p {
+	text-align: left;
+	color: white
+}
+
+/* intro Wrap */
+
+#intro {
+	padding-top: 50px;
+	border-top: #bdc3c7 solid 5px;
+}
+
+#features {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#features .ac a{
+	font-size: 20px;
+}
+
+/* Showcase Wrap */
+
+#showcase {
+	display: block;
+	background-color: #34495e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#showcase h1 {
+	color: white;
+}
+
+#footerwrap {
+	background-color: #2f2f2f;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	text-align: left;
+}
+
+#footerwrap h3 {
+	font-size: 28px;
+	color: white;
+}
+
+#footerwrap p {
+	color: white;
+	font-size: 18px;
+}
+
+/* Copyright Wrap */
+
+#c {
+	background: #222222;
+	padding-top: 15px;
+	text-align: right;
+}
+
+#c p {
+	color: white
+}
+
+#calendar {
+  width: 70%;
+
+}
+
+.calendar-side{
+  margin-left: 25px;
+}
+/* ------- Agenda View ------- */
+#agendaView > table{
+    width: 100%;
+    min-height: 500px;
+    background: #FFF;
+
+}
+
+#agendaView .fc-agendaView-event-start,
+#agendaView .fc-agendaView-event-end{
+    width: 20%;
+}
+
+#agendaView .fc-agendaView-event-title{
+    width: 60%;
+}
+#agendaView th{
+    height: 30px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+    font-weight: bold;
+    padding: 10px 0 0 10px;
+}
+
+#agendaView td{
+    height: 30px;
+    padding: 10px 0 0 10px;
+    font-size: 14px;
+    vertical-align: text-bottom;
+}
+.fc-header-title {
+    color:#CCCCCC !important;
+}
+.pin {
+	display: inline-block;
+	background: #FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 15px;
+	padding-bottom:0;
+	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1;
+
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.pin img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.pin p {
+	font: 12px/18px Arial, sans-serif;
+	color: #333;
+  background-color:#333;
+  text-align: center;
+  height: 40px;
+}
+
+@media (min-width: 960px) {
+	#columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
+
+@media (min-width: 1100px) {
+	#columns {
+		-webkit-column-count: 5;
+		-moz-column-count: 5;
+		column-count: 5;
+	}
+}
+
+#columns:hover .pin:not(:hover) {
+	opacity: 0.4;
+}
+.recipe-panel{
+  width: 100%;
+  height: 550px;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ position:relative;
+overflow-y: scroll;
+
+ 
+}
+.draggable-box{
+    
+    
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    float: left;
+   width: 33.333333%;
+    
+}
+
+
+#recipe_list > div {
+  -webkit-box-shadow: 0 4px 15px -5px #555;
+  box-shadow: 0 4px 15px -5px #555;
+  width: 200px;
+  height: 180px;
+  margin-top: 25px;
+  
+  margin-right: auto;
+  position: relative;
+ 
+}
+
+#recipe_list > div img {
+  padding: 0px;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+#recipe_list > div h3 {
+	color: black;
+	font-size: 100%;
+	}
+#left_panel{
+ 	 position: relative;
+   float: left;
+    height: 100%;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 1000px;
+    text-align: center; 
+}
+.cell-highlght{
+    background-color:green;
+}
+.cell-dropped{
+    background-color:red;
+}
+.ui-draggable-helper {
+    height: 20px;
+    width: 160px;
+    border: 1px solid Black;
+    text-align: center;
+    background-color:fff;
+}
+.fc-title { 
+   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+}
+#calendar-frame{
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+ 
+
+}
+.calendar-frame-week{
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:100%;
+  height: 50px;
+
+}
+#main_container{
+    width: 1000px;
+    position: relative;
+}
+#form{
+  display: block;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.span3 img{
+  width: 50%;
+  border: none;
+}
+.span3 {
+  
+}
+.span3 a:hover div.recipe_list {
+  background: url(img/item-01.png) #fff no-repeat; 
+  transition: all 1s ease 0s;
+  -webkit-transition: all 1s ease 0s;
+  width: 33.333333%;
+}
+.ui-helper {
+    width: 20% !important;
+    height: 5% !important;
+    color: white;
+}
+.fc-bg table {
+  height: 25%; /* strech bg to bottom edge */
+}
+.fc-day-grid-container{
+  height: 50px;
+}
