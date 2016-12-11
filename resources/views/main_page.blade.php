@@ -52,7 +52,6 @@
 
 <div class="container text-center" id="main_container">
   <div class="row content">
-   
     <div class="container text-centered" id="left_panel">
         <div class ="row col-md-offset-4">
           <div id="form" class= "col-md-6">
@@ -67,7 +66,14 @@
             </div>
             {!! Form::close() !!}
           </div>
+           
+        </div>     
         </div>
+        </div>
+        <div class ="row">
+             <a id="viewcal"><img src="img/Calendar.png" id="viewcal">
+        </div>
+        <br><br>
          <div class="text-left" id=calendar-frame>
       <br>
       {!! $calendar->calendar() !!}
@@ -208,8 +214,11 @@
 });
   });
 
+  </script>         
+<script>$("#viewcal").click(function() {
+  $('#calendar-frame').slideToggle();
+  });
   </script>
-
   <script>
   $("#somediv").click(function() {
   opendialog("http://www.closetcooking.com/2011/11/buffalo-chicken-chowder.html/");

@@ -12,7 +12,7 @@ class myCalendar{
 	      ])->setCallbacks([ //set fullcalendar callback options (will not be JSON encoded)
 	      
 	      'eventAfterAllRender' => 'function() {
-	       $(\'.fc-content\').css(\'height\', \'80px\');
+	       $(\'.fc-content\').css(\'height\', \'95px\');
 	       $(\'.fc-content\').css("background","url(\'http://static.food2fork.com/Buffalo2BChicken2BChowder2B5002B0075c131caa8.jpg\') no-repeat");
 	       $(\'.fc-content\').css("background-size", \'cont\');
 	       $(\'.fc-view-container .fc-day-grid-container\').css(\'height\',\'100px\');
