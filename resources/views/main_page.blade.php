@@ -84,17 +84,7 @@
         <div class ="row">
           <div class="recipe-panel">
             <div id ="recipe_list" class="container-fluid">
-           <!--  <ul>
-            <li class="span3">
-              <a href="#">
-                <img src="img/item-01.png" alt="Test">
-                <div class="trihondaThumb">
-                  <strong>Chicken</strong>
-                    <span>dry runn</span>
-                </div>
-                </a>
-            </li>
-            </ul> -->
+         
                 <!-- These are our grid blocks -->
             </div>
           </div>

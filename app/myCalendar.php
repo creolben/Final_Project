@@ -20,7 +20,7 @@ class myCalendar{
 	     }',
 	   //Add event click to delete callback
 	    'eventClick' => 'function(event) {
-	       
+	       	eventObj = event
 			if (!confirm(\'Are you sure about this change?\')) {
 				revertFunc();
 			}else{
@@ -33,8 +33,7 @@ class myCalendar{
 				},
 				success: function(response){
 			    event.id = response.eventid;
-			    $("div[id^=\'calendar\']").fullCalendar( \'refetchEvents\' );
-			   // $(\"div[id^=\'calendar\']\").fullCalendar(\'refetchEventSources\',\'/events/feeds\');
+			   $("div[id^=\'calendar\']").fullCalendar(\'removeEvents\',[event.id]);
 			    },
 			    error: function(e){ 
 			    	alert(event.id);
